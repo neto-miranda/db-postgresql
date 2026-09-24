@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: public
+    database: "{{ env_var('DB_NAME') }}"
+    schema: public
+    tables:
+      - name: products
+      - name: product_category_name_translation
+      - name: orders
+      - name: customers
+      - name: order_payments
+      - name: order_items
+      - name: order_reviews
+      - name: sellers
